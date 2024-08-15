@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="POC.MainWindow"
+        Title="POC">
+    <StackPanel Margin="5" Spacing="5">
+        <Label HorizontalAlignment="Left">Zdravo. Ovo je POC aplikacije pisane u .NET kao WPF aplikacija i runnable je na linux, windows i macOs sistemima!</Label>
+        <TextBox Name="tb_prvi" Watermark="Prvi broj" MaxWidth="250" HorizontalAlignment="Left" />
+        <TextBox Name="tb_drugi" Watermark="Drugi broj" MaxWidth="250"  HorizontalAlignment="Left" />
+        <Button Content="Saberi" Click="Saberi_Click"/>
+        <TextBox Name="tb_rezultat" Watermark="Rezultat" IsReadOnly="true" MaxWidth="250"  HorizontalAlignment="Left" />
+    </StackPanel>
+</Window>
